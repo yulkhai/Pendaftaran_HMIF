@@ -1,3 +1,5 @@
+@include('navbar')
+
 <!doctype html>
 <html lang="en">
 
@@ -28,7 +30,7 @@
                             <input type="password" class="form-control" name="password" id="password">
                         </div>
                 </div>
-                <div class="d-grid gap-2">
+                <div class="d-grid gap-2" href="beranda">
                     <button type="submit" class="btn btn-lg btn-primary">Submit</button>
                 </div>
                 </form>
