@@ -1,5 +1,5 @@
 
-@include('partials.navbar')
+@include('navbar')
 <!doctype html>
 <html lang="en">
 
@@ -14,7 +14,7 @@
 </head>
 
 <body>
-
+    <div class="gambar"><img src="assets/image/gambar_beranda.png"></div>
     <body>
         <div class="pengumuman-container">
             <div class="card pengumuman-form">
@@ -24,7 +24,7 @@
                     <h3>Pendaftaran untuk HMIF telah dibuka. Jadilah bagian dari kami dan sama sama
                         memajukan kampus kita tercinta. Untuk mendaftar klik tombol dibawah ini!</h4>
                 </div>
-                <button type="daftar" class="btn btn-lg btn-primary">Daftar</button>
+                <button type="button" class="btn btn-lg btn-primary " href ="register">Daftar</button>
                 <br>
                 <h6 class="text-light text-center">Terjadi masalah ketika mendaftar? <a> Hubungi Kami!</a>
                 </h6>
