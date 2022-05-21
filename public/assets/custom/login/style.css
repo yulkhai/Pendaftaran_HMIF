@@ -1,0 +1,61 @@
+html,
+body {
+    height: 100%;
+    background-color: #2F303A;
+}
+
+.logo {
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+.global-container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFF;
+}
+
+.login-form {
+    height: 400px;
+    width: 450px;
+    padding-left: 30px;
+    padding-right: 30px;
+    background-color: #2F303D !important;
+    border-radius: 10px;
+}
+
+input[type="text"],
+input[type="password"] {
+    background: #2f303d;
+    color: #FFF;
+    border: 2px solid #FFF;
+    border-radius: 10px;
+    margin-bottom: 5px;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+    outline: none;
+    border: none;
+    background: #2F303C;
+    color: #FFF;
+    margin: 0;
+}
+
+.judul-login {
+    font-weight: 700;
+    padding-top: 25px;
+}
+
+.btn {
+    color: #000 !important;
+    transform: translateY(10px);
+    font-size: 14px;
+    border-radius: 10px !important;
+    font-weight: 700;
+}
