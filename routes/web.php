@@ -30,3 +30,23 @@ Route::get('/beranda', function () {
         "title" => "Beranda"
     ]);
 });
+
+Route::get('/data_peserta', function () {
+    return view('data_peserta');
+});
+
+Route::get('/detai', function () {
+    return view('detail');
+});
+
+Route::get('/hapus', function () {
+    return view('hapus');
+});
+
+Route::get('/register', function () {
+    return view('register');
+});
+
+Route::get('/departemen', function () {
+    return view('departemen');
+});
