@@ -54,3 +54,8 @@ html,body {
 h3 {
     text-align: justify;
 }
+
+.gambar{
+    position: fixed;
+    padding-left: 900px;
+}

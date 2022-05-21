@@ -1,4 +1,4 @@
-@include('partials.navbar')
+@include('navbar2')
 <!doctype html>
 <html lang="en">
 
@@ -13,8 +13,7 @@
 </head>
 
 <body>
-
-    <body>
+    <div class="gambar"><img src="assets/image/gambar_beranda.png"></div>
         <div class="pengumuman-container">
             <div class="card pengumuman-form">
                 <div class="card-body">

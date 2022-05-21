@@ -32,21 +32,32 @@ Route::get('/beranda', function () {
 });
 
 Route::get('/data_peserta', function () {
-    return view('data_peserta');
+    return view('data_peserta',[
+        "title" => "Data_peserta"
+    ]);
 });
 
-Route::get('/detai', function () {
-    return view('detail');
+
+Route::get('/detail', function () {
+    return view('detail',[
+        "title" => "Detail"
+    ]);
 });
 
 Route::get('/hapus', function () {
-    return view('hapus');
+    return view('hapus',[
+        "title" => "Hapus"
+    ]);
 });
 
 Route::get('/register', function () {
-    return view('register');
+    return view('register',[
+        "title" => "Register"
+    ]);
 });
 
 Route::get('/departemen', function () {
-    return view('departemen');
+    return view('departemen',[
+        "title" => "Departemen"
+    ]);
 });
