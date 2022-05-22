@@ -37,7 +37,15 @@
                             <th style="color:white"><center>Aksi</center></th>
                         </tr>
                     </thead>
-                    <tbody>
+                    <tbody class="text-light">
+                        @foreach ($post as $post)
+                        <tr>
+                            <td>{{$loop->iteration}}</td>
+                            <td>{{$post->name}}</td>
+                            <td>{{$post->nim}}</td>
+                            <td>Detail</td>
+                        </tr>
+                        @endforeach
                     </tbody>
                 </table>
             </div>
