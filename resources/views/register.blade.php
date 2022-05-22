@@ -141,7 +141,7 @@
                             </div>
                         </div>
                         <div>
-                            <center><button class="btn btn--radius-2 btn--blue" type="submit" name="submit">daftar</button></center>
+                            <center><button class="btn btn--radius-2 btn--blue" type="submit" name="submit"><a href="/">daftar</a></button></center>
                         </div>
                     </form>
                 </div>

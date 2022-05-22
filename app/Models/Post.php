@@ -52,10 +52,10 @@ class Post extends Model
         $this->where('id', $id)->delete();
     }
     
-    protected $table = 'register';
+    protected $table = 'posts';
 
     protected $fillable = [
-        'nama',
+        'name',
         'nim',
         'email',
         'angkatan',

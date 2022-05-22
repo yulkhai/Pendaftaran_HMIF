@@ -40,6 +40,17 @@ class PageController extends Controller
             return redirect('/');
         }
     }
+
+    public function detail(){
+        session_start();
+        if (isset($_SESSION['login'])) {
+            return view('detail', [
+                'post'=> Post::all()
+            ]);
+        } else {
+            return redirect('/');
+        }
+    }
     
 
 }

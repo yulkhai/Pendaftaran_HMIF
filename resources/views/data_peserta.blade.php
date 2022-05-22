@@ -34,18 +34,19 @@
                             <th style="color:white"><center>No</center></th>
                             <th style="color:white"><center>Nama</center></th>
                             <th style="color:white"><center>NIM</center></th>
-                            <th style="color:white"><center>Aksi</center></th>
+                            <th style="color:white"><center>EMAIL</center></th>
                         </tr>
                     </thead>
                     <tbody class="text-light">
                         @foreach ($post as $post)
                         <tr>
-                            <td>{{$loop->iteration}}</td>
-                            <td>{{$post->name}}</td>
-                            <td>{{$post->nim}}</td>
-                            <td>Detail</td>
+                            <td class="text-center">{{$loop->iteration}}</td>
+                            <td class="text-center">{{$post->name}}</td>
+                            <td class="text-center"> {{$post->nim}}</td>
+                            <td class="text-center">{{$post->email}}</td>
                         </tr>
                         @endforeach
+                    </tbody>
                 </table>
             </div>
         </div>

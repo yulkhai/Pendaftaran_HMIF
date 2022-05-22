@@ -37,6 +37,7 @@ Route::get('/data_peserta', [PageController::class, 'pendaftar'])->name('pendaft
 Route::get('/register', [RegisterController::class, 'index'])->name('register');
 Route::post('/register', [RegisterController::class, 'store']);
 
+Route::get('/detail', [PageController::class, 'detail'])->name('detail');
 Route::get('/departemen', function () {
     return view('departemen',[
         "title" => "Departemen"
