@@ -5,6 +5,8 @@ use App\Http\Controllers\UserController;
 use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\Auth\LogoutController;
 use App\Http\Controllers\Auth\RegisterController;
+use App\Http\Controllers\Pages\PageController;
+use App\Http\Controllers\Pages\Post;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -30,20 +32,7 @@ Route::get('/logout', [LogoutController::class, 'logout'])->name('logout');
 
 Route::get('/beranda', [UserController::class, 'beranda'])->name('beranda');
 
-Route::get('/data_peserta', [PageController::class, 'data_peserta'])->name('pendaftar');
-
-
-Route::get('/detail', function () {
-    return view('detail',[
-        "title" => "Detail"
-    ]);
-});
-
-Route::get('/hapus', function () {
-    return view('hapus',[
-        "title" => "Hapus"
-    ]);
-});
+Route::get('/data_peserta', [PageController::class, 'pendaftar'])->name('pendaftar');
 
 Route::get('/register', [RegisterController::class, 'index'])->name('register');
 Route::post('/register', [RegisterController::class, 'store']);
