@@ -37,20 +37,15 @@
                             <th style="color:white"><center>Aksi</center></th>
                         </tr>
                     </thead>
-                    <tbody>
-                         <?php $__currentLoopData = $register; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $r): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
-                    @foreach($register as $r)
+                    <tbody class="text-light">
+                        @foreach ($post as $post)
                         <tr>
-                            <td>{{ $r->register_nama }}</td>
-                            <td>{{ $r->register_nim }}</td>
-                            <td>
-                                <a href="detail{{ $r->register_nim }}">Detail</a>
-                                ||
-                                <a href="hapus{{ $r->register_nim }}">Hapus</a>
-                            </td>
+                            <td>{{$loop->iteration}}</td>
+                            <td>{{$post->name}}</td>
+                            <td>{{$post->nim}}</td>
+                            <td>Detail</td>
                         </tr>
-		            @endforeach
-                    </tbody>
+                        @endforeach
                 </table>
             </div>
         </div>
