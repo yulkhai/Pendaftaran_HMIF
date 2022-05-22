@@ -37,7 +37,6 @@ Route::get('/data_peserta', function () {
     ]);
 });
 
-
 Route::get('/detail', function () {
     return view('detail',[
         "title" => "Detail"
