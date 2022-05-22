@@ -14,14 +14,14 @@
 </head>
 
 <body>
-    <div class="logo d-inline-block text-center text-light"><img src="/assets/logo.png"> HMIF</div>
     <div class="global-container">
         <div class="card login-form">
             <div class="card-body">
                 <h2 class="judul-login text-center">L O G I N</h2>
                 <div class="card-text">
-                    <form>
+                    <form action="{{route('login')}}" method="post">
                         <div class="mb-3">
+                        {{csrf_field()}} 
                             <label for="nim" class="form-label">NIM</label><br>
                             <input type="text" class="form-control" name="nim" id="nim">
                         </div>
@@ -31,7 +31,7 @@
                         </div>
                 </div>
                 <div class="d-grid gap-2" href="beranda">
-                    <a href="beranda" type="submit" class="btn btn-lg btn-primary">Submit</a>
+                    <button type="submit" class="btn btn-lg btn-primary">Submit</button>
                 </div>
                 </form>
                 <br>

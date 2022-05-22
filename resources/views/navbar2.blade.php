@@ -11,24 +11,24 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link active text-decoration-underline" href="beranda"> <span>
-                                BERANDA </span> </a>
+                        <a class="nav-link active text-decoration-underline" href="data_peserta"> <span>
+                                PENDAFTARAN </span> </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active text-decoration-underline" href="data_peserta"> <span>
-                                DATA PESERTA </span> </a>
+                        <a class="nav-link active text-decoration-underline" href="beranda"> <span>
+                                BERANDA </span> </a>
                     </li>
                     <li class="nav-item dropdown">
                        <a class="nav-link dropdown-toggle user" href="#" id="navbarDropdown" role="button"
                            data-bs-toggle="dropdown" aria-expanded="false">
-                           <img src="assets/image/user.png" alt="Avatar pulan" width="40" class="avatar pulan">Pulan</a>
+                           <img src="assets/image/user.png" alt="Avatar pulan" width="40" class="avatar pulan">{{ $_SESSION['name'] }}</a>
                        </a>
                        <ul class="dropdown-menu" style="background-color: #2F303A" aria-labelledby="navbarDropdown">
                            <div class="text-center">
 
-                               <li><a style="color:white" class="dropdown-item" href="#"> <span>PROFILE </span> </a></li>
+                               <li><a class="dropdown-item" href="#"> <span>PROFILE </span> </a></li>
                                <li><hr class="dropdown-divider fiturProfle"></li>
-                               <li><a style="color:white" class="dropdown-item"  href="login">LOGOUT</a></li>
+                               <li><a class="dropdown-item"  href="login">LOGOUT</a></li>
                            </div>
                        </ul>
                    </li>

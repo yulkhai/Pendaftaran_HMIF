@@ -24,14 +24,15 @@
         <div class="wrapper wrapper--w790">
             <div class="card card-5">
                 <div class="card-body">
-                    <form method="POST">
                     <div class="atas"><center><u>Form Pendaftaran HMIF</u></center></div><br /><br /><br />
                         <div class="judul"><u>Biodata Singkat</u></div><br />
+                    <form action="/register" method="post">
+                        {{csrf_field()}}
                         <div class="form-row">
                             <div class="name">Nama Lengkap</div>
                             <div class="col-2">
                                     <div class="input-group">
-                                        <input class="input--style-5" type="text" name="nama">
+                                        <input class="input--style-5" type="text" name="name">
                                      </div>
                                 </div>
                             </div>
