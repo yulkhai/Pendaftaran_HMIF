@@ -46,7 +46,6 @@
                             <td>Detail</td>
                         </tr>
                         @endforeach
-                    </tbody>
                 </table>
             </div>
         </div>

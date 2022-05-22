@@ -42,3 +42,9 @@ Route::get('/departemen', function () {
         "title" => "Departemen"
     ]);
 });
+
+Route::get('/profile', function () {
+    return view('profile',[
+        "title" => "Profile"
+    ]);
+});
