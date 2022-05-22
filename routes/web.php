@@ -1,7 +1,10 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\UserController;
+use App\Http\Controllers\Auth\LoginController;
+use App\Http\Controllers\Auth\LogoutController;
+use App\Http\Controllers\Auth\RegisterController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -19,23 +22,20 @@ Route::get('/', function () {
     ]);
 });
 
-Route::get('/login', function () {
-    return view('login',[
-        "title" => "Login"
-    ]);
-});
+Route::get('/login', [LoginController::class, 'index'])->name('login');
+Route::post('/login', [LoginController::class, 'login']);
 
-Route::get('/beranda', function () {
-    return view('beranda',[
-        "title" => "Beranda"
-    ]);
-});
+Route::get('/logout', [LogoutController::class, 'logout'])->name('logout');
+
+
+Route::get('/beranda', [UserController::class, 'beranda'])->name('beranda');
 
 Route::get('/data_peserta', function () {
     return view('data_peserta',[
         "title" => "Data_peserta"
     ]);
 });
+
 
 Route::get('/detail', function () {
     return view('detail',[
@@ -49,11 +49,8 @@ Route::get('/hapus', function () {
     ]);
 });
 
-Route::get('/register', function () {
-    return view('register',[
-        "title" => "Register"
-    ]);
-});
+Route::get('/register', [RegisterController::class, 'index'])->name('register');
+Route::post('/register', [RegisterController::class, 'store']);
 
 Route::get('/departemen', function () {
     return view('departemen',[
@@ -61,4 +58,8 @@ Route::get('/departemen', function () {
     ]);
 });
 
-Route::resource('register', registerController::class);
+Route::get('/profile', function () {
+    return view('profile',[
+        "title" => "Profile"
+    ]);
+});
