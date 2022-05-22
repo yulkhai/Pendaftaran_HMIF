@@ -21,7 +21,7 @@ Route::get('/data_peserta', function () {
     return view('data_peserta');
 });
 
-Route::get('/detai', function () {
+Route::get('/detail', function () {
     return view('detail');
 });
 
