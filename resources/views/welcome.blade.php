@@ -24,7 +24,7 @@
                     <h3>Pendaftaran untuk HMIF telah dibuka. Jadilah bagian dari kami dan sama sama
                         memajukan kampus kita tercinta. Untuk mendaftar klik tombol dibawah ini!</h4>
                 </div>
-                <button type="button" class="btn btn-lg btn-primary " href ="register">Daftar</button>
+                <button type="button" class="btn btn-lg btn-primary" href="register">Daftar</button>
                 <br>
                 <h6 class="text-light text-center">Terjadi masalah ketika mendaftar? <a> Hubungi Kami!</a>
                 </h6>
