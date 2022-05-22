@@ -60,3 +60,5 @@ Route::get('/departemen', function () {
         "title" => "Departemen"
     ]);
 });
+
+Route::resource('register', registerController::class);
