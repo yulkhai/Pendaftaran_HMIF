@@ -30,11 +30,7 @@ Route::get('/logout', [LogoutController::class, 'logout'])->name('logout');
 
 Route::get('/beranda', [UserController::class, 'beranda'])->name('beranda');
 
-Route::get('/data_peserta', function () {
-    return view('data_peserta',[
-        "title" => "Data_peserta"
-    ]);
-});
+Route::get('/data_peserta', [PageController::class, 'data_peserta'])->name('pendaftar');
 
 
 Route::get('/detail', function () {
