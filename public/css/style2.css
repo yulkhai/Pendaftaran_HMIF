@@ -91,6 +91,12 @@
     font-weight: 700;
   }
 
+  .kalimat {
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    font-weight: 700;
+  }
+
   .atas {
     color: rgb(255, 255, 255);
     font-size: 35px;
@@ -247,7 +253,7 @@
   }
   
   tr:nth-child(even) {
-    background-color: #1D203E;
+    background-color: #2F303A;
   }
   
   /**
@@ -314,7 +320,7 @@
      #BACKGROUND
      ========================================================================== */
   .bg-blue {
-    background: #1D203E;
+    background: #2F303A;
   }
   
   .bg-red {
@@ -322,27 +328,27 @@
   }
   
   .bg-gra-01 {
-    background: -webkit-gradient(linear, left bottom, left top, from(#1D203E), to(#1D203E));
-    background: -webkit-linear-gradient(bottom, #1D203E 0%, #1D203E 100%);
-    background: -moz-linear-gradient(bottom, #1D203E 0%, #1D203E 100%);
-    background: -o-linear-gradient(bottom, #1D203E 0%, #1D203E 100%);
-    background: linear-gradient(to top, #1D203E 0%, #1D203E 100%);
+    background: -webkit-gradient(linear, left bottom, left top, from(#2F303A), to(#2F303A));
+    background: -webkit-linear-gradient(bottom, #2F303A 0%, #2F303A 100%);
+    background: -moz-linear-gradient(bottom, #2F303A 0%, #2F303A 100%);
+    background: -o-linear-gradient(bottom, #2F303A 0%, #2F303A 100%);
+    background: linear-gradient(to top, #2F303A 0%, #2F303A 100%);
   }
   
   .bg-gra-02 {
-    background: -webkit-gradient(linear, left bottom, right top, from(#1D203E), to(#1D203E));
-    background: -webkit-linear-gradient(bottom left, #1D203E 0%, #1D203E 100%);
-    background: -moz-linear-gradient(bottom left, #1D203E 0%, #1D203E 100%);
-    background: -o-linear-gradient(bottom left, #1D203E 0%, #1D203E 100%);
-    background: linear-gradient(to top right, #1D203E 0%, #1D203E 100%);
+    background: -webkit-gradient(linear, left bottom, right top, from(#2F303A), to(#2F303A));
+    background: -webkit-linear-gradient(bottom left, #2F303A 0%, #2F303A 100%);
+    background: -moz-linear-gradient(bottom left, #2F303A 0%, #2F303A 100%);
+    background: -o-linear-gradient(bottom left, #2F303A 0%, #2F303A 100%);
+    background: linear-gradient(to top right, #2F303A 0%, #2F303A 100%);
   }
   
   .bg-gra-03 {
-    background: -webkit-gradient(linear, left bottom, right top, from(#1D203E), to(#1D203E));
-    background: -webkit-linear-gradient(bottom left, #1D203E 0%, #1D203E 100%);
-    background: -moz-linear-gradient(bottom left, #1D203E 0%, #1D203E 100%);
-    background: -o-linear-gradient(bottom left, #1D203E 0%, #1D203E 100%);
-    background: linear-gradient(to top right, #1D203E 0%, #1D203E 100%);
+    background: -webkit-gradient(linear, left bottom, right top, from(#2F303A), to(#2F303A));
+    background: -webkit-linear-gradient(bottom left, #2F303A 0%, #2F303A 100%);
+    background: -moz-linear-gradient(bottom left, #2F303A 0%, #2F303A 100%);
+    background: -o-linear-gradient(bottom left, #2F303A 0%, #2F303A 100%);
+    background: linear-gradient(to top right, #2F303A 0%, #2F303A 100%);
   }
   
   /* ==========================================================================
