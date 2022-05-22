@@ -25,8 +25,6 @@
                        </a>
                        <ul class="dropdown-menu" style="background-color: #2F303A" aria-labelledby="navbarDropdown">
                            <div class="text-center">
-
-                               <li><a style="color:white" class="dropdown-item" href="profile"> <span>PROFILE </span> </a></li>                   <li><hr class="dropdown-divider fiturProfle"></li>
                                <li><a class="dropdown-item"  href="login">LOGOUT</a></li>
                            </div>
                        </ul>
